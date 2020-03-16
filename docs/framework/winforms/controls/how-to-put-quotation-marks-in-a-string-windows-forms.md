@@ -82,6 +82,14 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
        const_cast<String^>(quote));  
     ```  
   
+  
+  4. Use human-readable character(s) as a quotation mark and replace it when you need it. For example.
+
+```vb
+  dim a_string as string = "It is a ``beautiful`` method."
+  ...
+  a_string = replace(a_string, "``", chr(34))
+```
 ## See also
 
 - <xref:System.Windows.Forms.TextBox>
